@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "cypress": "^13.11.0",
+    "solid-js": "^1.8.17",
+    "vite": "^5.2.13",
+    "vite-plugin-solid": "^2.10.2"
+  },
+  "dependencies": {
+    "@lmiller1990/cypress-ct-solid-js": "^0.1.0"
+  }
+}
