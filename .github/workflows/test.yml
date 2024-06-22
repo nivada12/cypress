@@ -1,0 +1,17 @@
+steps:
+- name: Checkout repository
+  uses: actions/checkout@v2
+
+- name: Setup Node.js
+  uses: actions/setup-node@v2
+  with:
+    node-version: '14'
+
+- name: Install dependencies
+  run: |
+    npm install
+    npm install cypress
+
+- name: Run tests
+  run: |
+    npx cypress run --record --key <85b1f0e7-891c-47ff-bf0b-c14db9eb83bd>
