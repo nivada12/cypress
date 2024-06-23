@@ -2,7 +2,7 @@ name: main
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
   pull_request:
 jobs:
   build-and-test:
@@ -19,6 +19,7 @@ jobs:
           # Node.js minor version is aligned to
           # https://github.com/actions/runner/blob/main/src/Misc/externals.sh
           node-version: 20.8.1
+      - run: npm run 
       - run: npm ci
       - run: npm run format
       - run: npm run build
@@ -41,7 +42,7 @@ jobs:
         uses: cycjimmy/semantic-release-action@v4
         id: semantic
         with:
-          branches: master
+          branches: main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
