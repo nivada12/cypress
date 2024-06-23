@@ -21,7 +21,6 @@ jobs:
           node-version: 20.8.1
       - run: npm run 
       - run: npm ci
-      - run: npm run format
       - run: npm run build
       - run: npm test
 
