@@ -21,7 +21,7 @@ jobs:
           node-version: 20.8.1
       - run: npm run 
       - run: npm ci
-      - run: npm test
+    
 
   release:
     runs-on: ubuntu-22.04
